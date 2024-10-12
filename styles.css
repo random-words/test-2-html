@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  height: 125px;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  line-height: 125px;
+  border: 2px solid black;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  border: 2px solid black;
+  justify-content: center; /* Center the content horizontally */
+  align-items: stretch; /* Ensure all columns have the same height */
+}
+
+.left,
+.right {
+  width: 300px; /* Equal width for symmetry */
+  background-color: #e0e0e0;
+  text-align: center;
+  line-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.center {
+  flex-grow: 1;
+  background-color: #d0d0d0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 500px; /* Ensure it's the same height as the left and right */
+}
